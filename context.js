@@ -24,7 +24,6 @@
 let proto = {};
 
 function delegateSet(property, name) {
-  console.log(property, name);
   proto.__defineSetter__(name, function(val){
     this[property][name] = val;
   })
